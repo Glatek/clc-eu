@@ -1,1 +1,2 @@
-import fetch from 'node-fetch';
+import fetch from 'make-fetch-happen';
+
