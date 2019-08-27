@@ -1,0 +1,22 @@
+{
+  "name": "clc-eu",
+  "version": "0.0.1",
+  "description": "Corine Land Cover data from EEA",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "corine",
+    "land",
+    "cover",
+    "EEA",
+    "europe",
+    "location",
+    "latitude",
+    "longitude",
+    "pluscode"
+  ],
+  "author": "Jeremy Karlsson <jeremy@vufuzi.se>",
+  "license": "MIT"
+}
