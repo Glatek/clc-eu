@@ -1,8 +1,8 @@
-# clc-eu 🏞 🌅 🌄 
+# clc-eu 🏞 🌅 🌄
 
 This is a JavaScript module that gives you the Corine Land Cover information of a lat/long pair or an [Open Location Code](https://github.com/google/open-location-code).
 
-Only terrain data within the EU is covered as this uses the [Corine Land Cover data from 2012](http://copernicus.discomap.eea.europa.eu/arcgis/rest/services/Corine/CLC2012_WM/MapServer) provided by the [European Environment Agency](https://www.eea.europa.eu/).
+Only terrain data within the EU is covered as this uses the [Corine Land Cover data from 2018](http://copernicus.discomap.eea.europa.eu/arcgis/rest/services/Corine/CLC2018_WM/MapServer) provided by the [European Environment Agency](https://www.eea.europa.eu/).
 
 ## Methods
 
