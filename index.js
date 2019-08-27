@@ -8,7 +8,7 @@ const layerPromise = fetch(layerInfoURL).then(r => r.json());
 
 const olcInstance = new OpenLocationCode.OpenLocationCode();
 
-async function getTerrainDataFromPlotCode(plotCode) {
+export async function getTerrainDataFromPlotCode(plotCode) {
   const decodedOCL = olcInstance.decode(plotCode);
   const { xmin, ymin, xmax, ymax } = getBoundsInMeters(decodedOCL);
   const arcgisbbox = encodeURIComponent(`${xmin},${ymin},${xmax},${ymax}`);
@@ -20,8 +20,6 @@ async function getTerrainDataFromPlotCode(plotCode) {
 
   const tileData = await tilePromise;
   const layerData = await layerPromise;
-
-  console.log('derp');
 
   const terrainValues = tileData.results.map(obj => obj.value);
 
@@ -40,20 +38,8 @@ async function getTerrainDataFromPlotCode(plotCode) {
  *
  * @param {{ latitude: number, longitude: number }} coords
  */
-async function getTerrainDataFromLatLong (coords) {
+export async function getTerrainDataFromLatLong (coords) {
   const openLocationCode = olcInstance.encode(coords.latitude, coords.longitude);
 
   return getTerrainDataFromPlotCode(openLocationCode);
 }
-
-(async () => {
-  console.log('derp');
-
-  const terrain = await getTerrainDataFromLatLong({
-    latitude: 59.927666,
-    longitude: 10.698893
-  });
-
-  console.log('terrain');
-  console.log(terrain);
-});

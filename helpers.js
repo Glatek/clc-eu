@@ -1,3 +1,5 @@
+import ArcgisToGeoJSONUtils from '@esri/arcgis-to-geojson-utils';
+
 /**
  * @typedef {DecodedOpenLocationCode}
  * @prop {number} latitudeCenter
@@ -59,5 +61,5 @@ export function getArcGISPolygon(decodedOpenLocationCode) {
     ]]
   };
 
-  return Object.assign({}, geojsonToArcGIS(wsg84geoJSONPolygon), { spatialReference: 102100 });
+  return Object.assign({}, ArcgisToGeoJSONUtils.geojsonToArcGIS(wsg84geoJSONPolygon), { spatialReference: 102100 });
 }
