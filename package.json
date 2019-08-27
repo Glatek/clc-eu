@@ -1,6 +1,6 @@
 {
   "name": "clc-eu",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Corine Land Cover data from European Environment Agency",
   "main": "index.js",
   "type": "module",
