@@ -16,6 +16,11 @@ async getTerrainDataFromLatLong({ latitude, longitude })
 
 These both returns `{ [string]: []string }` where the key is the plot code and the array contains the available terrains within that Open Location Code-plot.
 
+Example:
+```
+{ '9FFGWP5P+2R': [ 'Continuous urban fabric' ] }
+```
+
 ## Usage
 
 ```
