@@ -25,7 +25,8 @@
   "author": "Jeremy Karlsson <jeremy@vufuzi.se>",
   "license": "MIT",
   "dependencies": {
-    "make-fetch-happen": "^5.0.0"
+    "make-fetch-happen": "^5.0.0",
+    "open-location-code": "^1.0.3"
   },
   "devDependencies": {
     "typescript": "^3.5.3"
