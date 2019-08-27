@@ -7,7 +7,7 @@ Only terrain data within the EU is covered as this uses the [Corine Land Cover d
 ## Methods
 
 ```
-async getTerrainDataFromPlotCode(plotCode): { [string]: []string }
+async getTerrainDataFromPlotCode(plotCode)
 ```
 
 ```
