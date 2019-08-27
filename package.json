@@ -8,7 +8,7 @@
     "node": "12.9.1"
   },
   "scripts": {
-    "test": "node test.js",
+    "test": "node --experimental-modules test.js",
     "lint:types": "tsc -p jsconfig.json --noEmit"
   },
   "keywords": [
